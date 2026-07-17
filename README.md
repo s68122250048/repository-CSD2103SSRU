@@ -1,6 +1,6 @@
 ใบงานทบทวนภาษา Java
 คำชี้แจงสำหรับนักศึกษา
-ให้นักศึกษาท าใบงานนี้เพื่อทบทวนความรู้ภาษา Java ที่จำเป็นต่อการเรียนเรื่องอัลกอริทึม ได้แก่ ตัวแปร เงื่อนไข วนซ้ำ อาร์เรย์ เมธอด และการเขียนโปรแกรมแก้ปัญหาเบื้องต้น
+ให้นักศึกษาทำใบงานนี้เพื่อทบทวนความรู้ภาษา Java ที่จำเป็นต่อการเรียนเรื่องอัลกอริทึม ได้แก่ ตัวแปร เงื่อนไข วนซ้ำ อาร์เรย์ เมธอด และการเขียนโปรแกรมแก้ปัญหาเบื้องต้น
 ให้นักศึกษาเขียนโปรแกรมด้วยภาษา Java และส่งไฟล์.java หรืออัปโหลดลง GitHub ตามที่ผู้สอนกำหนด
 จุดประสงค์การเรียนรู้
 หลังจากทำใบงานนี้ นักศึกษาสามารถ
@@ -16,28 +16,34 @@
 อ้างอิงจากโจทย์
 
 1.1 คำสั่งแสดงผลข้อความในภาษา Java คืออะไร
+
 ตอบ:
 System.out.println();
 
 1.2 คำสั่งรับค่าจากแป้นพิมพ์โดยใช้ Scanner ต้อง import อะไร
+
 ตอบ:
 import java.util.Scanner;
 
 1.3 คำสั่งใดใช้ตรวจสอบเงื่อนไข
+
 ตอบ:
 if-else
 
 1.4 คำสั่งใดใช้วนซ้ำเมื่อทราบจำนวนรอบแน่นอน
+
 ตอบ:
 for
 
 1.5 คำสั่งใดใช้วนซ้ำเมื่อยังไม่ทราบจำนวนรอบแน่นอน
+
 ตอบ:
 while
 
 ตอนที่ 2: วิเคราะห์โค้ด
 
 โค้ด:
+
 
 int sum = 0;
 for (int i = 1; i <= 5; i++) {
@@ -46,18 +52,23 @@ for (int i = 1; i <= 5; i++) {
 System.out.println(sum);
 
 โปรแกรมนี้วนซ้ำทั้งหมดกี่รอบ
+
 ตอบ: 5 รอบ
 
 ค่าของตัวแปร sum หลังจบการทำงานคือเท่าใด
+
 ตอบ: 15
+
 
 (1+2+3+4+5 = 15)
 
 ผลลัพธ์ที่แสดงออกหน้าจอคืออะไร
+
 ตอบ:
 15
 
 โปรแกรมนี้ทำหน้าที่อะไร
+
 ตอบ:
 หาผลรวมของตัวเลขตั้งแต่ 1 ถึง 5
 
@@ -66,11 +77,13 @@ Pseudocode
 เริ่ม
 รับค่าตัวเลข
 ถ้า ตัวเลข % 2 == 0
-    แสดง Even number
+แสดง Even number
 ไม่เช่นนั้น
-    แสดง Odd number
+แสดง Odd number
 จบ
 Java Code
+
+
 import java.util.Scanner;
 
 public class EvenOdd {
@@ -93,11 +106,12 @@ Pseudocode
 รับคะแนนปลายภาค
 รวมคะแนน
 ถ้า >= 50
-    แสดง Pass
+แสดง Pass
 ไม่เช่นนั้น
-    แสดง Fail
+แสดง Fail
 จบ
 Java Code
+
 import java.util.Scanner;
 
 public class PassFail {
@@ -123,6 +137,7 @@ public class PassFail {
 }
 ตอนที่ 5: หาค่ามากสุด
 Java Code
+
 import java.util.Scanner;
 
 public class Max3 {
@@ -147,6 +162,7 @@ public class Max3 {
     }
 }
 ตอนที่ 6: Array + ค่าเฉลี่ย
+
 import java.util.Scanner;
 
 public class ArrayScore {
@@ -168,6 +184,7 @@ public class ArrayScore {
     }
 }
 ตอนที่ 7: ค้นหาใน Array
+
 import java.util.Scanner;
 
 public class SearchName {
@@ -195,6 +212,8 @@ public class SearchName {
     }
 }
 ตอนที่ 8: Method
+
+
 import java.util.Scanner;
 
 public class ReviewMethod {
@@ -223,19 +242,23 @@ public class ReviewMethod {
 ตอนที่ 9: Debug
 
 1. ผิดที่บรรทัดใด
+
 ตอบ:
 for (int i = 0; i <= numbers.length; i++)
 
 2. เพราะเหตุใด
+
 ตอบ:
 เพราะ index เกิน (ArrayIndexOutOfBoundsException)
 index สูงสุดคือ length - 1
 
 3. แก้ไขอย่างไร
+
 ตอบ:
 เปลี่ยน <= เป็น <
 
 โค้ดที่แก้แล้ว
+
 public class DebugExample {
     public static void main(String[] args) {
         int[] numbers = {10, 20, 30, 40, 50};
@@ -246,6 +269,7 @@ public class DebugExample {
     }
 }
 ตอนที่ 10: Mini Challenge (เลือกข้อ 1)
+
 import java.util.Scanner;
 
 public class EvenOddCount {
@@ -280,7 +304,7 @@ public class EvenOddCount {
 ตอบ: แก้ตาม
 
 4. ได้เรียนรู้อะไร
-ตอบ: เข้าใจ error และ debug มากขึ้น
+ตอบ: เข้าใจerrorและdebugมากขึ้น
 
 5. ข้อควรระวัง
-ตอบ: AI อาจผิด ต้องตรวจสอบเอง
+ตอบ: AI อาจผิด ต้องตรวจสอบด้วยตัวเอง
